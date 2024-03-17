@@ -18,7 +18,7 @@
     Private key should start from `0xs092349....sa89` prefix.  
     You can get privatekey information from account details of Metamask.
     ```.bash
-    export PRIVATEKEY='0x' 
+    export PRIVATEKEY='0x1234....7890' 
     ```
 2. Switch INFURA API KEY to yours.
 
