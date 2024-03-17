@@ -20,11 +20,13 @@ assert private_key is not None, "You must set PRIVATE_KEY environment variable"
 # Use the Account module to derive the address
 account = web3.eth.account.from_key(private_key)
 sender_address = account.address
+
+# TODO: switch receiver_address to your address
 receiver_address = '0x86De8AF44476037f544C8349b1309B188f47CCdc'
 
 print(f"Wallet Address: {sender_address}")
 
-# Amount of ETH to send, converted to Wei. Here sending 0.01 ETH as an example.
+# TODO: set up the amount of ETH to send, converted to Wei. Here sending 0.005 ETH as an example.
 amount_in_wei = web3.to_wei(0.0005, 'ether')
 
 # Building the transaction
