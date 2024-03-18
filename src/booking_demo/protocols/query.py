@@ -64,9 +64,13 @@ async def handle_get_total_queries(ctx: Context, sender: str, _msg: GetTotalQuer
     
     
     """
-    handle_query_request(): this message handler function is defined using the .on_message() decorator. It handles the QueryTableRequest messages and replies with a QueryTableResponse message. The handler processes the table availability query based on the provided parameters, 
-    checks the table statuses stored in the agent's storage, and sends the available table numbers as a response to the querying agent. Additionally, the handler tracks the total number of queries made and increments the count in storage.
+    handle_query_request(): this message handler function is defined using the .on_message() decorator. 
+    It handles the QueryTableRequest messages and replies with a QueryTableResponse message. 
+    The handler processes the table availability query based on the provided parameters, 
+    checks the table statuses stored in the agent's storage, 
+    and sends the available table numbers as a response to the querying agent. Additionally, the handler tracks the total number of queries made and increments the count in storage.
 
     handle_get_total_queries(): this message handler function is defined using the
-    .on_query() decorator. It handles the GetTotalQueries query and replies with a TotalQueries message containing the total number of queries made to the system. The handler retrieves the total query count from the agent's storage and responds with the count.
+    .on_query() decorator. It handles the GetTotalQueries query and replies with a 
+    TotalQueries message containing the total number of queries made to the system. The handler retrieves the total query count from the agent's storage and responds with the count.
     """
